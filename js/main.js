@@ -11,7 +11,35 @@ $(document).on('ready', function(){
     // Create a function called `searchImages()`. This function will handle the
     // process of taking a user's search terms and sending them to Flickr for a
     // response.
+	function searchImages(){
+		var searchPhotos = function(tags){
+			var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+			$.getJSON( flickerAPI, {
+				tags: "any",
+			})
+			.done()
+			
+			
+		}
+	};
 
+	
+/* function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });
+    }); */
+	
     // Inside the `searchImages()` function, the following things should happen:
 
         // 1.   Accept a string value called `tags` as an argument. Example:
