@@ -1,23 +1,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-ul#images li {
-    width: 120px;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    float: left;
-}
-
-ul#images li img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-}
-
-ul#images li button {
-    display: inline-block;
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 ul#images .placeholder {
@@ -28,24 +14,33 @@ ul#images .placeholder {
     margin: 2em;
 }
 
-.modal-body img {
-    width: 100%;
-    height: auto;
-}
-
 hr {
     clear:both;
 }
 
+ul#images {
+	list-style-type: none;
+  	display: block;
+}
 
+ul#images .placeholder {
+	color: #3F51B5;
+  	width: 100%;
+  	font-size: 2em;
+ 	margin: 2em;
+}
 
+#images li {
+  	height: 400px;
+	width: 400px;
+	overflow: auto;
+  	padding: 50px;
+  	margin-bottom: 30px;
+}
 
-
-
-
-
-
-
-
-
+.image-title {
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+}
 
